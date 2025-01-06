@@ -115,7 +115,7 @@ Total 2 students have been added.
 Students:
 10000
 10001
-> add courses
+> add points
 Enter an id and courses or 'back' to return:
 > 10000 600 400 0 0
 Points updated.
