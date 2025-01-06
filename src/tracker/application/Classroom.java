@@ -99,12 +99,12 @@ public class Classroom {
                 return;
             }
             List<String> splitPointsInput = new ArrayList<>(Arrays.stream(input.split(" ")).toList());
-            String id = splitPointsInput.get(0);
+            String id = splitPointsInput.getFirst();
             Student student = getStudentById(id);
             if (student == null) {
                 System.out.printf("No student is found for id=%s.%n", id);
             } else {
-                splitPointsInput.remove(0);
+                splitPointsInput.removeFirst();
                 if (!validator.arePointsValid(splitPointsInput)) {
                     System.out.println("Incorrect points format.");
                 } else {
